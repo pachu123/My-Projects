@@ -74,9 +74,18 @@ class Login extends Component {
         )
       } else {
         return (
-          <ScrollView>
-          <ImageBackground source={require('../../../Assets/images/back.png')} style={styles.imageContainer}>
+        
           
+          <ImageBackground source={require('../../../Assets/images/back.png')} style={{
+            alignItems: 'center',
+            justifyContent:'center',
+            width:null,
+            height:null,
+            marginTop:-60
+          }}
+          resizeMode="cover"
+          >
+          <View>
             <View style={styles.container}>
               <Logo 
                 showLogin={this.showLogin}
@@ -90,20 +99,16 @@ class Login extends Component {
                orientation={this.state.orientation}
               />
             </View>
-           
+            </View>
           </ImageBackground> 
           
-          </ScrollView> 
+        
         );
       } 
   }
 }
 
 const styles = StyleSheet.create({
-  container:{
-      flex:1,
-      alignItems: 'center',
-  },
   container1:{
     flex:1,
     alignItems: 'center',
@@ -113,14 +118,7 @@ loading:{
   backgroundColor:'#fff',
   alignItems: 'center',
   justifyContent:'center'
-},
-imageContainer:{
-  flex:1,
-  alignItems: 'center',
-  justifyContent:'center',
-  width:null,
-  height:null,
-},
+}
 });
 
 function mapStateToProps(state) {

@@ -42,7 +42,6 @@ class Logo extends Component {
 
                     }}
                     >
-                        <Text style={styles.jStyle}>JDREAMS</Text>
                     </Animated.View>
                    
                     
@@ -53,7 +52,7 @@ class Logo extends Component {
                     marginTop:-10,
                     }}
                 >
-                    <Text style={styles.dreamsStyle}>Event Management</Text>
+                    
                     </Animated.View>
                 
             </View>
@@ -74,19 +73,6 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         marginTop:20,
         maxHeight:100, 
-    },
-    jStyle:{
-        fontSize: 50,
-        fontFamily:'RobotoCondensed-Regular',
-        color:'#EE14D4',
-    },
-    dreamsStyle:{
-        fontSize: 20,
-        fontFamily:'RobotoCondensed-Regular',
-        color:'#09EE17',
-        marginLeft: 70,
-        
-
        
     }
 });
